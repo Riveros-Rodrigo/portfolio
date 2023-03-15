@@ -213,3 +213,35 @@ html{
 .sobreMi .contenidoSobreMi .cv button:hover .overlay{
     width: 100%;
 }
+/* SECCION S K I L L S */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenidoSkills h2{
+    font-size: 25px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .contenidoSkills .tecnico{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    transition: .3s;
+}
+.skills .contenidoSkills .tecnico .tec1 .hab1{
+    display: flex;
+    flex-direction: column;
+    background-color: #1e2326;
+    border-radius: 10px;
+    padding: 10px 4px;
+    margin: 10px 2px;
+}
+.skills .contenidoSkills .tecnico .tec i{
+    font-size: 30px;
+}
