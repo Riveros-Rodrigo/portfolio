@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Work Sans";
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* desplaza lentamente a los links */
+    scroll-behavior: smooth;
+}
+.contenedorHeader{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedorHeader header{
+    max-width: 1000px;
+    margin: auto;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedorHeader header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedorHeader header #nav{
+    list-style: none;
+    display: flex;
+}
+.contenedorHeader header #nav li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    display: none;
+}
+.contenedorHeader header #nav li a:hover{
+    color: #1CB298;
+}
+
+/* menu hamburguesa en la pc*/
+.contenedorHeader header .navResponsive{
+    /* display: none; */
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenidoBanner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+/* esto para en pc hay que modificar el width */
+.inicio .contenidoBanner .contenedorImg img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    width: 80%; 
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenidoBanner h1{
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: 'Righteous';
+}
+.inicio .contenidoBanner h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.inicio .contenidoBanner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenidoBanner .redes a:hover{
+    background-color: #1CB698;
+}
+/*SECCION SOBRE MI */
+.sobreMi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobreMi .contenidoSobreMi{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobreMi .contenidoSobreMi h2{
+    font-size: 25px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+}
+.sobreMi .contenidoSobreMi .sobreMiTxt p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobreMi .contenidoSobreMi .sobreMiTxt p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+/* datos personales */
+.sobreMi .contenidoSobreMi .datos h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobreMi .contenidoSobreMi .datos ul{
+    list-style: none;
+}
+.sobreMi .contenidoSobreMi .datos ul li{
+    font-size: 15px;
+    text-align: center;
+    margin: 12px 0;
+}
+.sobreMi .contenidoSobreMi .datos ul li strong{
+    color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+/* INTERESES */
+.sobreMi .contenidoSobreMi .intereses h3{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.sobreMi .contenidoSobreMi .intereses .contenedorIntereses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sobreMi .contenidoSobreMi .intereses .contenedorIntereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 4px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.sobreMi .contenidoSobreMi .intereses .contenedorIntereses .interes:hover{
+    background-color: #1CB698;
+}
+.sobreMi .contenidoSobreMi .intereses .contenedorIntereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/* CV */
+.sobreMi .contenidoSobreMi .cv button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobreMi .contenidoSobreMi .cv button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.sobreMi .contenidoSobreMi .cv button:hover .overlay{
+    width: 100%;
+}
