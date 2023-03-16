@@ -185,6 +185,10 @@ html{
     margin-bottom: 10px;
 }
 /* CV */
+.sobreMi .contenidoSobreMi .cv a{
+    text-decoration: none;
+}
+
 .sobreMi .contenidoSobreMi .cv button{
     cursor: pointer;
     background-color: transparent;
