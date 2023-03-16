@@ -243,6 +243,9 @@ html{
     padding: 10px 4px;
     margin: 10px 2px;
 }
+.skills .contenidoSkills .tecnico .tec1 .hab1:hover{
+    background-color: #1CB698;
+}
 .skills .contenidoSkills .tecnico .tec i{
     font-size: 30px;
 }
@@ -340,7 +343,7 @@ html{
     margin-bottom: 20px;
     background-color: #252A2E;
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
 }
 .contacto button{
     cursor: pointer;
@@ -431,4 +434,46 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+/* RESPONSIVE PC */
+@media screen and (min-width:1200px){
+    .sobreMi .contenidoSobreMi h2{
+        font-size: 35px;
+    }
+    .sobreMi .contenidoSobreMi .sobreMiTxt p{
+        font-size: 25px;
+    }
+    .sobreMi .contenidoSobreMi .datos h3{
+        font-size: 35px;
+    }
+    .sobreMi .contenidoSobreMi .datos ul li{
+        font-size: 25px;
+    }
+    .sobreMi .contenidoSobreMi .cajaPc{
+        display: flex;
+        margin: 60px 0px;
+    }
+    .sobreMi .contenidoSobreMi .intereses h3{
+        font-size: 35px;
+    }
+    .skills .contenidoSkills h2{
+        font-size: 35px;
+    }
+    .skills .contenidoSkills .tecnico .tec i {
+        font-size: 100px;
+    }
+    .skills .contenidoSkills .tecnico .tec1 .hab1{
+        margin: 10px 15px;
+        width: 50px;
+        width: 133px;
+    }
+    .portfolio h2{
+        font-size: 35px;
+    }
+    .contacto h2{
+        font-size: 35px;
+    }
+    .contacto .fila{
+        display: flex;
+    }
 }
