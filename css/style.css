@@ -501,9 +501,9 @@ footer .arriba{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #1e2326;
-        width: 100vw;
+        backdrop-filter: blur(10px);
         height: 100vh;
+        width: 100vw;
         text-align: center;
     }
     nav.responsive ul{
@@ -511,6 +511,6 @@ footer .arriba{
     }
     nav.responsive ul li{
         border-bottom: 1px solid #1CB698;
-        padding: 68px 0;
+        padding: 10px 0;
     }
 }
