@@ -500,7 +500,7 @@ footer .arriba{
         display: block;
         position: absolute;
         right: 0;
-        top: 75px;
+        top: 74px;
         backdrop-filter: blur(10px);
         height: 100vh;
         width: 100vw;
@@ -510,7 +510,11 @@ footer .arriba{
         display: block !important;
     }
     nav.responsive ul li{
-        border-bottom: 1px solid #1CB698;
+        border-bottom: 1px solid #fff;
         padding: 10px 0;
+        background: #1CBb
+    }
+    .contenedorHeader header nav ul li a:hover{
+        color: #1e2326;
     }
 }
