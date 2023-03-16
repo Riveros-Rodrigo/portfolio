@@ -16,13 +16,15 @@
                 <a href="#">Rodrigo</a>
             </div>
             <nav id="nav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre Mi</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
             </nav>
-            <div class="navResponsive">
+            <div class="navResponsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -155,7 +157,7 @@
         <!-- SECCION PROYECTOS -->
         <section id="portfolio" class="portfolio">
             <div class="contenidoSeccion">
-                <h2>PORTFOLIO</h2>
+                <h2>PROYECTOS</h2>
                 <div class="galeria">
                     <div class="proyecto">
                         <img src="img/p1.jpg" alt="">
@@ -254,5 +256,6 @@
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 </html>
